@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/hexa_rcv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/hexa_dp"/>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/hexa_rcv"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="@dimen/hexa_dp"
+        android:layout_marginRight="55dp" />
+
+    <SeekBar
+        android:id="@+id/seekBar_red"
+        android:layout_width="302dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/hexa_dp"
+        android:progressTint="@color/red"
+        android:thumbTint="@color/red" />
+
+    <SeekBar
+        android:id="@+id/seekBar_green"
+        android:layout_width="302dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBar_red"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/hexa_dp"
+        android:progressTint="@color/green"
+        android:thumbTint="@color/green" />
+
+    <SeekBar
+        android:id="@+id/seekBar_blue"
+        android:layout_width="302dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBar_green"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/hexa_dp"
+        android:progressTint="@color/blue"
+        android:thumbTint="@color/blue" />
+
+    <SeekBar
+        android:id="@+id/seekbar_brightness"
+        android:layout_width="302dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBar_blue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/hexa_dp"
+        android:progress="100"
+        android:progressTint="@color/black"
+        android:thumbTint="@color/black" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seekbar_brightness"
+        android:layout_centerHorizontal="true"
+        android:text="Update Function"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp" />
+
+    <ImageButton
+        android:id="@+id/reconnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="@dimen/hexa_dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/roundedbutton"
+        android:scaleType="fitCenter"
+        android:src="@drawable/baseline_bluetooth_black_18dp" />
+
+</RelativeLayout>

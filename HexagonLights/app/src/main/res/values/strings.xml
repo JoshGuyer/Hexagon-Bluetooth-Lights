@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Hexagon Lights</string>
+    <string name="todo">TODO</string>
+    <string name="spinner">Functions</string>
+    <string-array name="functions">
+        <item>Off</item>
+        <item>Rainbow 1</item>
+        <item>Rainbow 2</item>
+        <item>Rainbow 3</item>
+        <item>Blue Palette</item>
+        <item>Purple Palette</item>
+        <item>Chase</item>
+        <item>Audio</item>
+    </string-array>
+</resources>
